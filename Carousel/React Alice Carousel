@@ -1,1 +1,18 @@
-co
+use 2.7.1 version
+-newer version has bugs custom button didnt work properly
+
+
+
+import AliceCarousel from "react-alice-carousel";
+import 'react-alice-carousel/lib/alice-carousel.css';
+
+<alicecarousel
+    activeIndex={index}
+    autoWidth
+    items={items}
+    responsive={responsive}
+    // buttonsControls={false}
+    disableDotsControls
+    disableButtonsControls
+    onSlideChanged={syncActiveIndex} 
+/>
